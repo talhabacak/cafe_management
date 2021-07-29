@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Ürün Sınıfı Seçiniz:  "
+            android:id="@+id/dialog_sinif"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            android:layout_alignParentLeft="true"
+            />
+
+        <Spinner
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_sinif"
+            android:layout_width="match_parent">
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Ürün Seçiniz:  "
+            android:id="@+id/dialog_urun"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            />
+
+        <Spinner
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_urun"
+            android:layout_width="match_parent">
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            android:text="Ekle"
+            android:id="@+id/diaolog_urun_ekle"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            android:text="İptal"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/diaolog_urun_iptal"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

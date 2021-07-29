@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tr.yildiz.cafe_management">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cafe_management">
+        <activity android:name=".MasalarActivity"></activity>
+        <activity android:name=".AyarlarSinifActivity" />
+        <activity android:name=".ManageActivity" />
+        <activity android:name=".GiderActivity" />
+        <activity android:name=".KisiselActivity" />
+        <activity android:name=".SatisRaporuActivity" />
+        <activity android:name=".DepoActivity" />
+        <activity android:name=".GelirGiderActivity" />
+        <activity android:name=".MasaActivity" />
+        <activity android:name=".AyarlarMasalarActivity" />
+        <activity android:name=".AnaSayfaActivity" />
+        <activity android:name=".AyarlarUrunActivity" />
+        <activity android:name=".SignActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
