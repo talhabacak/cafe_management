@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+    android:id="@+id/layoutG"
+    android:layout_weight="1"
+    android:layout_margin="15dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/red"
+    android:layout_height="150dp"
+    >
+
+    <TextView
+        android:width="70dp"
+        android:height="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/num"
+        android:layout_weight="1"
+        android:id="@+id/masaViewNo"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="5dp"
+        android:layout_rowWeight="1"
+        android:textColor="@color/black"
+        android:text="99"
+        android:gravity="center"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:layout_height="10dp"
+        android:layout_width="70dp"/>
+    <TextView
+        android:width="140dp"
+        android:height="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/masaView"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:textColor="@color/black"
+        android:paddingBottom="15dp"
+        android:text=""
+        android:gravity="center"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:layout_height="10dp"
+        android:layout_width="140dp"/>
+
+</LinearLayout>

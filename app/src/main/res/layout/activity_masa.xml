@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#011200"
     android:layout_height="match_parent"
     tools:context=".MasaActivity">
 
@@ -15,7 +16,10 @@
         <TextView
             android:id="@+id/textViewMasa"
             android:layout_width="match_parent"
+            android:background="#D1D4DC"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:textSize="16pt"
             android:gravity="center"
             android:text="Masa" />
@@ -24,34 +28,182 @@
             android:id="@+id/isimkisisel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="#C6CAC2"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/black"
             android:gravity="center"
-            android:hint="İsim Girebilirsiniz"/>
+            android:hint="İsim Girebilirsiniz"
+            android:textSize="12pt" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/Masa"
+            android:id="@+id/masalar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="100dp"
+            android:layout_height="match_parent"
+            android:background="#B5BCC3">
 
         </androidx.recyclerview.widget.RecyclerView>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0A2339"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#0A2339"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="0dp"
+                    android:id="@+id/ac"
+                    android:text="AÇ"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_height="0dp"
+                    android:id="@+id/kapat"
+                    android:text="Kapat"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textColor="#350101"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="#C8C8C8"           android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="Toplam Tutar: "
+                        android:textSize="12pt"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/toplamTutar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#460101"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:background="#F0E6F0"          android:layout_weight="2"
+                        android:text="0.00"
+                        android:textSize="12pt"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#350101"
+                        android:background="#C8C8C8"           android:layout_marginRight="5dp"
+                        android:text="Açılış: "
+                        android:textSize="11pt"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/acilis_saat"
+                        android:layout_width="0dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#460101"
+                        android:background="#F0E6F0"                        android:textSize="12pt"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#350101"
+                        android:background="#C8C8C8"           android:layout_marginRight="5dp"
+                        android:text="Son: "
+                        android:textSize="12pt"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/son_saat"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textColor="#460101"
+                        android:background="#F0E6F0"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:textSize="12pt"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:text="Toplam Tutar: 0.00 TL"
-        android:textSize="14pt"
-        android:textStyle="bold"
-        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="103dp"
         app:srcCompat="@android:drawable/ic_input_add" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

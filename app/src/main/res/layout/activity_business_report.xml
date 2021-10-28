@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD596"
+    tools:context=".BusinessReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tarih"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:textSize="12pt"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:textColor="#36396E"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text=""
+                />
+
+            <ImageButton
+                android:id="@+id/pdfwrite"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_picture_as_pdf_24" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#233F60"
+            android:textSize="12pt"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#898FFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Gelir"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/rGelir"
+            android:layout_weight="6"
+            android:layout_marginBottom="5dp"
+            android:background="#FDE2CB"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#233F60"
+            android:textSize="12pt"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#898FFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Gider"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rGider"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:layout_marginBottom="5dp"
+            android:background="#FDE2CB">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#D38C40"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#233F60"
+                android:textSize="12pt"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:textColor="#898FFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="TOPLAM"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="#FFD596"
+                    android:textStyle="bold"
+                    android:textSize="10pt"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kar"
+                    />
+                <TextView
+                    android:id="@+id/karT"
+                    android:textSize="10pt"
+                    android:background="#FFD596"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="#FFD596"
+                    android:textStyle="bold"
+                    android:textSize="10pt"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gelir"
+                    />
+                <TextView
+                    android:id="@+id/gelirT"
+                    android:textSize="10pt"
+                    android:background="#FFD596"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:background="#FFD596"
+                    android:gravity="center"
+                    android:textSize="10pt"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gider"
+                    />
+                <TextView
+                    android:id="@+id/giderT"
+                    android:textSize="10pt"
+                    android:background="#FFD596"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

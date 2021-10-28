@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3DBD4"
+    android:orientation="vertical"
+    tools:context=".ContactActivity">
+
+    <TextView
+        android:text="Geliştirici ile İletişime Geç"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="12pt"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:background="#EBFDFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Sizin Apk Versiyonunuz:" />
+
+
+        <TextView
+            android:id="@+id/versionCurrent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#EBFDFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Güncel Apk:" />
+
+        <TextView
+            android:id="@+id/drive"
+            android:textIsSelectable="true"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:textColor="#3471DA"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:text="" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactR"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#F1D3D3"
+        android:layout_weight="1"
+        app:reverseLayout="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/edit_contact"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint=" . . . "
+            android:textColorHint="#FFC2A7"
+            android:textSize="8pt"
+            android:backgroundTint="#FF8E41"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textColor="#FFC2A7"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="0dp"
+            android:backgroundTint="#131111"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_send_24" />
+
+    </LinearLayout>
+
+</LinearLayout>

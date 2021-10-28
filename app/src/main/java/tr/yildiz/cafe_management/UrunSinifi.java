@@ -4,37 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UrunSinifi {
-    private String isim;
-    private int ID;
-    private ArrayList<Urun> urun;
+    private ArrayList<String> urunSinif;
 
-    public UrunSinifi(String isim, int ID, ArrayList<Urun> urun) {
-        this.isim = isim;
-        this.ID = ID;
-        this.urun = urun;
+    public UrunSinifi(ArrayList<String> urunSinif) {
+        this.urunSinif = urunSinif;
     }
 
-    public String getIsim() {
-        return isim;
+    public ArrayList<String> getUrun() {
+        return urunSinif;
     }
 
-    public void setIsim(String isim) {
-        this.isim = isim;
-    }
-
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
-    public ArrayList<Urun> getUrun() {
-        return urun;
-    }
-
-    public void setUrun(ArrayList<Urun> urun) {
-        this.urun = urun;
+    public void setUrun(ArrayList<String> urunSinif) {
+        this.urunSinif = urunSinif;
     }
 }

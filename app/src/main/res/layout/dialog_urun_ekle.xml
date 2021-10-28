@@ -1,9 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:padding="5dp"
+    android:background="#C1F6FF"
     android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text=""
+            android:textSize="9pt"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="0dp"
+            android:backgroundTint="#292323"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_change_circle_24" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/urunAra"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Ürün Ara"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_sinif"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Ürün Sınıfı:  "
+            android:textSize="9pt"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/sinif"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text=""
+            android:textSize="9pt"
+            android:layout_alignParentLeft="true"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/text_isim"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Ürün İsmi:  "
+            android:textSize="9pt"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/isim"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text=""
+            android:textSize="9pt"
+            android:layout_alignParentLeft="true"
+            />
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,20 +119,18 @@
             android:textStyle="bold"
             android:text="Ürün Sınıfı Seçiniz:  "
             android:id="@+id/dialog_sinif"
-            android:layout_centerVertical="true"
-            android:textAlignment="center"
             android:textSize="10pt"
             android:layout_alignParentLeft="true"
             />
 
         <Spinner
             android:layout_height="match_parent"
+            android:textStyle="bold"
             android:id="@+id/spinner_sinif"
             android:layout_width="match_parent">
         </Spinner>
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
@@ -49,8 +150,35 @@
         <Spinner
             android:layout_height="match_parent"
             android:id="@+id/spinner_urun"
+            android:textStyle="bold"
             android:layout_width="match_parent">
         </Spinner>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Adet:  "
+            android:id="@+id/dialog_adet"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ör: 3"
+            android:textStyle="bold"
+            android:ems="10"
+            android:inputType="number" />
 
     </LinearLayout>
 
@@ -65,6 +193,7 @@
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:textSize="17sp"
+            android:textColor="@color/black"
             android:text="Ekle"
             android:id="@+id/diaolog_urun_ekle"
             android:textStyle="bold"
@@ -74,6 +203,7 @@
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:textSize="17sp"
+            android:textColor="@color/black"
             android:text="İptal"
             android:layout_marginLeft="15dp"
             android:id="@+id/diaolog_urun_iptal"
@@ -81,5 +211,7 @@
             />
 
     </LinearLayout>
+
+
 
 </LinearLayout>

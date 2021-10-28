@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEAEA"
+    tools:context=".AyarlarMasaSinifiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewEkle"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13pt"
+                    android:text="Masa Sınıfı Ekle"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_ekle"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:text="Masa Sınıfı İsmi:"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_ekle"
+                    android:hint="ör: Alt, Bahçe, Üst"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/buttonEkle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="EKLE" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView0"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13pt"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="Masa Sınıfı Sil"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    />
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Masa Sınıfı İsmi:"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerSil"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+            <Button
+                android:id="@+id/buttonSil"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="Sil" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#FFB3A7"
+            android:layout_marginTop="30dp"
+            android:paddingTop="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="13pt"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:text="Masa Oluştur"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="0dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Masa Sayısı:"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp" />
+
+                <EditText
+                    android:id="@+id/editTextNumberMasa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+                    android:ems="10"
+                    android:hint="ör/ 5, 27"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_weight="1"
+                    android:text="Masa Sınıfı:"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerEkleSinif"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/buttonMasaEkle"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Oluştur" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

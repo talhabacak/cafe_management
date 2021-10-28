@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="14pt"
+            android:textColor="@color/black"
+            android:text="BİLGİLERİNİZ" />
+
+
+        <TextView
+            android:id="@+id/text_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="12pt"
+            android:text="mail" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:id="@+id/text_password"
+                android:layout_marginRight="5dp"
+                android:textSize="12pt"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <CheckBox
+                android:id="@+id/checkBoxPassword"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Göster" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/text_isim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="10pt"
+            android:text="isim" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="isim giriniz" />
+
+            <Button
+                android:id="@+id/buttonIsim"
+                android:textSize="5pt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kaydet" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_soyisim"
+            android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="10pt"
+            android:layout_height="wrap_content"
+            android:text="Soyisim" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:id="@+id/editTextTextSoyIsim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:inputType="textPersonName"
+                android:hint="Soyisim giriniz" />
+
+            <Button
+                android:id="@+id/buttonSoyisim"
+                android:layout_width="0dp"
+                android:textSize="5pt"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kaydet" />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/text_tel"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="10pt"
+            android:layout_height="wrap_content"
+            android:text="tel" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            >
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginRight="5dp"
+                android:hint="Tel"
+                android:ems="10"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/buttonTel"
+                android:layout_width="0dp"
+                android:textSize="5pt"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kaydet" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FBE6C7"
     android:layout_height="match_parent"
     tools:context=".SignActivity">
 
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="96dp"
+        android:textStyle="bold"
         android:layout_marginEnd="24dp"
         android:autofillHints="@string/prompt_email"
         android:hint="@string/prompt_email"
@@ -25,6 +27,7 @@
         android:id="@+id/isim"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
@@ -41,6 +44,7 @@
     <EditText
         android:id="@+id/soyisim"
         android:layout_width="0dp"
+        android:textStyle="bold"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
@@ -60,6 +64,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:textStyle="bold"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:autofillHints="Şifre"
@@ -81,6 +86,7 @@
         android:layout_marginEnd="24dp"
         android:autofillHints="Şifre"
         android:hint="Şifre Tekrar"
+        android:textStyle="bold"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
@@ -89,8 +95,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="Telefon numaranızı giriniz"
+        android:hint="Telefon numaranızı giriniz"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordAgain" />
+
+    <EditText
+        android:id="@+id/dukkan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="Dükkan İsminizi Giriniz"
+        android:hint="İşletme İsminizi Giriniz"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tel" />
+
     <Button
         android:id="@+id/signin"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -100,9 +143,10 @@
         android:layout_marginBottom="64dp"
         android:text="Kayıt Ol"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordAgain"
+        app:layout_constraintTop_toBottomOf="@+id/dukkan"
         app:layout_constraintVertical_bias="0.2" />
 
     <ProgressBar
@@ -128,10 +172,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="18dp"
+        android:textStyle="bold"
         android:layout_marginEnd="260dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordAgain" />
+        app:layout_constraintTop_toBottomOf="@+id/dukkan" />
 
     <TextView
         android:id="@+id/textView"
@@ -139,11 +184,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="255dp"
+        android:textStyle="bold"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordAgain" />
+        app:layout_constraintTop_toBottomOf="@+id/dukkan" />
 
     <Switch
         android:id="@+id/switch_mod"
@@ -151,10 +197,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="170dp"
         android:layout_marginTop="15dp"
+        android:textStyle="bold"
         android:layout_marginEnd="180dp"
+        android:theme="@style/SwitchCompatTheme"
+        android:checked="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordAgain"
+        app:layout_constraintTop_toBottomOf="@+id/dukkan"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 

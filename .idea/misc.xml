@@ -1,5 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable-v24/back.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable-v24/ic_baseline_wine_bar_24.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/bottom_shape.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/contact_back.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_arrow_up.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_baseline_arrow_drop_up_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_baseline_change_circle_24.xml" value="0.1734375" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_baseline_check_circle_outline_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_baseline_feedback_24.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_baseline_menu_open_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_baseline_picture_as_pdf_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_baseline_remove_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_close.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_launcher_foreground1.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_launcher_foreground2.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_menu_camera.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/iletisim_shape.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/num.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/red.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/drawable/side_nav_bar.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_admin_contact.xml" value="0.25226449275362317" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_ana_sayfa.xml" value="0.176" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_ayarlar_masa_sinifi.xml" value="0.2" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_ayarlar_masalar.xml" value="0.2" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_ayarlar_sinif.xml" value="0.176" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_ayarlar_urun.xml" value="0.2" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_business_report.xml" value="0.264" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_contact.xml" value="0.25226449275362317" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_depo.xml" value="0.176" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_depo_biten.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_gelir_gider.xml" value="0.264" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_general_report.xml" value="0.264" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_gider.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_kisisel.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_login.xml" value="0.176" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_logs.xml" value="0.2" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_main_page.xml" value="0.2" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_main_screen.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_manage.xml" value="0.2" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_masa.xml" value="0.264" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_masalar.xml" value="0.264" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_satis_raporu.xml" value="0.176" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_show_logs.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_sign.xml" value="0.264" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_siparis.xml" value="0.20244565217391305" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_siparisler.xml" value="0.152" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/activity_user_info.xml" value="0.20244565217391305" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/alert_odeme.xml" value="0.264" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/app_bar_main_screen.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/content_main_screen.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/dialog_adet.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/dialog_depo.xml" value="0.2151268115942029" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/dialog_emin_misin.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/dialog_masa_ekle.xml" value="0.1" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/dialog_urun_ekle.xml" value="0.176" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/diaolg_ayrinti.xml" value="0.20244565217391305" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/diaolog_gelir_gider.xml" value="0.245018115942029" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/emin_misin.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/fragment_bottom_dialog_list_dialog.xml" value="0.1609375" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/fragment_dialog_bottom.xml" value="0.1609375" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/fragment_gallery.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/fragment_home.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/fragment_main.xml" value="0.2" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/fragment_slideshow.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/grid_masa.xml" value="0.21014492753623187" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/nav_header_main_screen.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/recycler_calisan.xml" value="0.264" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/recycler_contact.xml" value="0.25226449275362317" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/recycler_depo.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/recycler_depobiten.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/recycler_log.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/recycler_masa.xml" value="0.2" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/recycler_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/recycler_satis_rapor.xml" value="0.176" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/recycler_siparis.xml" value="0.25226449275362317" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/recyclet_business_report.xml" value="0.245018115942029" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/recyler_admin.xml" value="0.25226449275362317" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/layout/recyvler_menu.xml" value="0.264" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/menu/main_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/mipmap-anydpi-v26/ic_launcher2.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/mipmap-anydpi-v26/ic_launcher2_round.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi-nb/Desktop/cafe_management/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14791666666666667" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

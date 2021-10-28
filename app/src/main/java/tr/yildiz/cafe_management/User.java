@@ -1,16 +1,47 @@
 package tr.yildiz.cafe_management;
 
 public class User {
-    private String isim, soyisim, mail, sifre, mod;
-    private int ID;
+    private String isim, soyisim, mail, sifre,userId,yer,mod, tel;
+    private Integer status;
 
-    public User(String isim, String soyisim, String mail, String sifre, String mod, int ID) {
+    public User(String isim, String soyisim, String mail, String sifre, String mod, String userId, String yer, String tel, Integer status) {
         this.isim = isim;
+        this.userId = userId;
         this.soyisim = soyisim;
         this.mail = mail;
         this.sifre = sifre;
         this.mod = mod;
-        this.ID = ID;
+        this.yer = yer;
+        this.tel = tel;
+        this.status = status;
+    }
+
+    public User(){
+
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getYer() {
+        return yer;
+    }
+
+    public void setYer(String yer) {
+        this.yer = yer;
     }
 
     public String getIsim() {
@@ -53,11 +84,11 @@ public class User {
         this.mod = mod;
     }
 
-    public int getID() {
-        return ID;
+    public String getTel() {
+        return tel;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setTel(String tel) {
+        this.tel = tel;
     }
 }

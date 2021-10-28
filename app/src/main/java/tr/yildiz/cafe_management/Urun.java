@@ -3,16 +3,34 @@ package tr.yildiz.cafe_management;
 import java.util.ArrayList;
 
 public class Urun {
-    private String isim, birim;
-    private int ID;
-    private float alis, satis;
+    private String isim, alis, satis, depo,sinif;
 
-    public Urun(String isim, String birim, int ID, float alis, float satis) {
+    public Urun(String isim,String sinif, String alis, String satis, String depo) {
         this.isim = isim;
-        this.birim = birim;
-        this.ID = ID;
         this.alis = alis;
         this.satis = satis;
+        this.depo = depo;
+        this.sinif = sinif;
+    }
+
+    public Urun(){
+
+    }
+
+    public String getSinif() {
+        return sinif;
+    }
+
+    public void setSinif(String sinif) {
+        this.sinif = sinif;
+    }
+
+    public String getDepo() {
+        return depo;
+    }
+
+    public void setDepo(String depo) {
+        this.depo = depo;
     }
 
     public String getIsim() {
@@ -23,35 +41,19 @@ public class Urun {
         this.isim = isim;
     }
 
-    public String getBirim() {
-        return birim;
-    }
-
-    public void setBirim(String birim) {
-        this.birim = birim;
-    }
-
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
-    public float getAlis() {
+    public String getAlis() {
         return alis;
     }
 
-    public void setAlis(float alis) {
+    public void setAlis(String alis) {
         this.alis = alis;
     }
 
-    public float getSatis() {
+    public String getSatis() {
         return satis;
     }
 
-    public void setSatis(float satis) {
+    public void setSatis(String satis) {
         this.satis = satis;
     }
 }

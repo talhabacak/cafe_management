@@ -1,9 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0F0F10"
+    android:orientation="vertical"
     tools:context=".GelirGiderActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="#FFDD5E"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:textSize="8pt"
+            android:gravity="center"
+            android:text="Tarih:"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <CalendarView
+            android:id="@+id/calendarBas"
+            android:background="#FFF4CF"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tarih"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="#FF9E5E"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:textSize="12pt"
+            android:gravity="center"
+            android:text="Tarih Seçiniz"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButtonDay"
+                android:checked="true"
+                android:layout_width="0dp"
+                android:textColor="#B3BDFF"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gün" />
+            <RadioButton
+                android:textColor="#B3BDFF"
+                android:id="@+id/radioButtonMonth"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Ay" />
+            <RadioButton
+                android:id="@+id/radioButtonYear"
+                android:textColor="#B3BDFF"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Yıl" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000C2B"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/urunGoster"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Ürün Satışlarını Göster"
+            />
+
+        <Button
+            android:id="@+id/gelirGiderGoster"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Kafe Gelir-Gider Göster"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#141527"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/gelirEkle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Kafe Gelir Ekle"
+            />
+        <Button
+            android:id="@+id/giderEkle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Kafe Gider Ekle"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

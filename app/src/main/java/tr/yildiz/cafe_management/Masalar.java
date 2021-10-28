@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Masalar {
     int ID;
-    private ArrayList<Masa> masa;
+    private ArrayList<MasaUrun> masa;
 
-    public Masalar(int ID, ArrayList<Masa> masa) {
+    public Masalar(int ID, ArrayList<MasaUrun> masa) {
         this.ID = ID;
         this.masa = masa;
     }
@@ -19,11 +19,11 @@ public class Masalar {
         this.ID = ID;
     }
 
-    public ArrayList<Masa> getMasa() {
+    public ArrayList<MasaUrun> getMasa() {
         return masa;
     }
 
-    public void setMasa(ArrayList<Masa> masa) {
+    public void setMasa(ArrayList<MasaUrun> masa) {
         this.masa = masa;
     }
 }
