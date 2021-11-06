@@ -220,21 +220,37 @@ public class adapterMasaUrun extends RecyclerView.Adapter<adapterMasaUrun.tanim>
             ikram.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    showIkramUrun();
+                    try {
+                        showIkramUrun();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        Toast.makeText(context, "Hata, İşlem gerçekleşmedi", Toast.LENGTH_SHORT).show();
+                    }
                 }
             });
 
             sil.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    showSilUrun();
+                    try {
+                        showSilUrun();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        Toast.makeText(context, "Hata, İşlem gerçekleşmedi", Toast.LENGTH_SHORT).show();
+                    }
                 }
             });
 
             odeme.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    showOdemeUrun();
+                    try {
+                        showOdemeUrun();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        Toast.makeText(context, "Hata, İşlem gerçekleşmedi", Toast.LENGTH_SHORT).show();
+                    }
+
                 }
             });
 
@@ -664,7 +680,6 @@ public class adapterMasaUrun extends RecyclerView.Adapter<adapterMasaUrun.tanim>
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError error) {
-                    Toast.makeText(context,"HATA - "+error.toString(),Toast.LENGTH_SHORT).show();
                 }
             });
         }

@@ -167,8 +167,7 @@ public class AyarlarMasalarActivity extends AppCompatActivity  implements View.O
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(getApplicationContext(),"Hata\n"+error.toString(),Toast.LENGTH_SHORT).show();
-            }
+             }
         });
     }
 

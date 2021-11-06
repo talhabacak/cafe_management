@@ -73,6 +73,7 @@ public class ManageActivity extends AppCompatActivity  implements View.OnClickLi
         buttonMasaSinifi = (Button) findViewById((R.id.buttonMasaSinifi));
         buttonKaydet = (Button) findViewById((R.id.buttonKaydet));
         buttonEkle = (Button) findViewById((R.id.buttonEkle));
+        edit_text_calisanEkle = (EditText) findViewById((R.id.edit_text_calisanEkle));
         editTextNumberDecimalTuruncu = (EditText) findViewById((R.id.editTextNumberDecimalTuruncu));
         editTextNumberDecimalKirmizi = (EditText) findViewById((R.id.editTextNumberDecimalKirmizi));
 
@@ -176,9 +177,18 @@ public class ManageActivity extends AppCompatActivity  implements View.OnClickLi
 
             case R.id.buttonEkle:
                 control = 0;
+                String calisanMail = edit_text_calisanEkle.getText().toString();
+                if(calisanMail == null){
+                    Toast.makeText(context, "Çalışan maili giriniz",Toast.LENGTH_SHORT).show();
+                    break;
+                }
+                if(calisanMail.isEmpty()){
+                    Toast.makeText(context, "Çalışan maili giriniz",Toast.LENGTH_SHORT).show();
+                    break;
+                }
                 for (User u:users) {
                     Log.i("kullanıcı",u.getUserId());
-                    if(edit_text_calisanEkle.getText().toString().equals(u.getMail())){
+                    if(calisanMail.equals(u.getMail())){
                         if(u.getMod().equals("1")){
                             Toast.makeText(context,"Yönetici Eklenemez",Toast.LENGTH_SHORT).show();
                         }

@@ -96,10 +96,10 @@ public class adapterCalisan extends RecyclerView.Adapter<adapterCalisan.tanim> {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-                    holder.reference.child("dukkanlar").child(holder.user.getUid()).child("calisanlar").child(list.get(pos).getUserId()).child("odeme").setValue(1);
+                    holder.reference.child("dukkanlar").child(holder.user.getUid()).child("calisanlar").child(list.get(pos).getUserId()).child("ode").setValue(1);
                 }
                 else{
-                    holder.reference.child("dukkanlar").child(holder.user.getUid()).child("calisanlar").child(list.get(pos).getUserId()).child("odeme").setValue(0);
+                    holder.reference.child("dukkanlar").child(holder.user.getUid()).child("calisanlar").child(list.get(pos).getUserId()).child("ode").setValue(0);
                 }
             }
         });

@@ -258,12 +258,6 @@ public class MasalarActivity extends AppCompatActivity {
                         Log.i("masaKisiselIsim",s.getIsimKisisel());
                     }
                 }
-                Log.i("masaIsim",s.getIsim());
-                Log.i("masaAc",s.getAc());
-                Log.i("masaSon",s.getSon());
-                Log.i("masaSonFormat",s.getSonFormat());
-                Log.i("masaMode",s.getMode().toString());
-                Log.i("masaKisiselIsim",s.getIsimKisisel());
 
                 masa.add(s.getIsim());
                 masaIsim.add(s);
@@ -318,7 +312,6 @@ public class MasalarActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(getApplicationContext(),"Hata\n"+error.toString(),Toast.LENGTH_SHORT).show();
             }
         });
 

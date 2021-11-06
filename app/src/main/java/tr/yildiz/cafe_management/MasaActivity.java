@@ -191,7 +191,6 @@ public class MasaActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(context,"HATA - "+error.toString(),Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -220,7 +219,6 @@ public class MasaActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(context,"HATA - "+error.toString(),Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -533,9 +531,14 @@ public class MasaActivity extends AppCompatActivity {
                                         adetInput += temp;
                                         Double alistutar = m.getAlis() * adetInput;
                                         Double satistutar = m.getSatis() * adetInput;
-                                        reference.child("dukkanlar").child(mekan).child("masa").child(sinif).child(isim).child(dialogIsim).child("adet").setValue(adetInput);
-                                        reference.child("dukkanlar").child(mekan).child("masa").child(sinif).child(isim).child(dialogIsim).child("alisTutar").setValue(alistutar);
-                                        reference.child("dukkanlar").child(mekan).child("masa").child(sinif).child(isim).child(dialogIsim).child("satisTutar").setValue(satistutar);
+                                        try {
+                                            reference.child("dukkanlar").child(mekan).child("masa").child(sinif).child(isim).child(dialogIsim).child("adet").setValue(adetInput);
+                                            reference.child("dukkanlar").child(mekan).child("masa").child(sinif).child(isim).child(dialogIsim).child("alisTutar").setValue(alistutar);
+                                            reference.child("dukkanlar").child(mekan).child("masa").child(sinif).child(isim).child(dialogIsim).child("satisTutar").setValue(satistutar);
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                            Toast.makeText(context, "Hata, İşlem gerçekleşmedi", Toast.LENGTH_SHORT).show();
+                                        }
                                     }
 
                                     @Override
@@ -565,7 +568,6 @@ public class MasaActivity extends AppCompatActivity {
                                 dateSon = simpleDateFormat.parse(currentTime);
                             } catch (ParseException e) {
                                 e.printStackTrace();
-                                Toast.makeText(context,"HATA - "+e.toString(),Toast.LENGTH_SHORT).show();
                             }
                             sdf = new SimpleDateFormat("HH");
                             currentHour = sdf.format(new Date());
@@ -596,9 +598,9 @@ public class MasaActivity extends AppCompatActivity {
                         sdfSiparisFormat = new SimpleDateFormat("dd");
                         String day = sdfSiparisFormat.format(new Date());
 
-                        sdfSiparisFormat = new SimpleDateFormat("mm-ss");
+                        sdfSiparisFormat = new SimpleDateFormat("HH-mm-ss");
                         String timeL = sdfSiparisFormat.format(new Date());
-
+                        Log.i("zamanLog",timeL);
                         Loglar l = new Loglar(person.getIsim() +" "+ person.getSoyisim(),"Masa",sinif+ " " +isim + " - " + editTextNumber.getText().toString()+ " adet " + dialogIsim + " eklendi ", timeL);
 
                         reference.child("dukkanlar").child(mekan).child("logs").child(year).child(mounth).child(day).child(timeSiparisFormat+user.getUid()).setValue(l);
@@ -610,8 +612,7 @@ public class MasaActivity extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
-                        Toast.makeText(context,"HATA - "+error.toString(),Toast.LENGTH_SHORT).show();
-                    }
+                     }
                 });
 
                 inputUrun.dismiss();
@@ -692,7 +693,6 @@ public class MasaActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(context,"HATA - "+error.toString(),Toast.LENGTH_SHORT).show();
 
             }
        });
@@ -732,7 +732,6 @@ public class MasaActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(context,"HATA - "+error.toString(),Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -803,17 +802,16 @@ public class MasaActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(context,"HATA - "+error.toString(),Toast.LENGTH_SHORT).show();
             }
         });
     }
-
 
     public  void close(String temp){
         masa.clear();
         acilis_saat.setText("");
         son_saat.setText("");
         toplamTutar.setText("0.00");
+
         reference.child("dukkanlar").child(mekan).child("masalar").child(sinif).child(isim).child("isimKisisel").setValue("");
         reference.child("dukkanlar").child(mekan).child("masalar").child(sinif).child(isim).child("mode").setValue(0);
         reference.child("dukkanlar").child(mekan).child("masalar").child(sinif).child(isim).child("ac").setValue("");
@@ -831,10 +829,13 @@ public class MasaActivity extends AppCompatActivity {
         sdfSiparisFormat = new SimpleDateFormat("dd");
         String day = sdfSiparisFormat.format(new Date());
 
-        sdfSiparisFormat = new SimpleDateFormat("mm-ss");
+        sdfSiparisFormat = new SimpleDateFormat("HH-mm-ss");
         String timeL = sdfSiparisFormat.format(new Date());
 
+        Log.i("zamanLogKapat0","timeL");
+        Log.i("zamanLogKapat",timeL);
         Loglar l = new Loglar(person.getIsim() +" "+ person.getSoyisim(),"Masa",sinif+ " " +isim + " - masa kapatıldı - " + temp, timeL);
+        Log.i("zamanLogKapat2",l.getTime());
 
         reference.child("dukkanlar").child(mekan).child("logs").child(year).child(mounth).child(day).child(timeSiparisFormat+user.getUid()).setValue(l);
 
@@ -883,7 +884,15 @@ public class MasaActivity extends AppCompatActivity {
                         reference.child("dukkanlar").child(mekan).child("statement").child(currentYear).child(currentMounth).child(currentDay).child(mU.getIsimUrun()).setValue(mU);
                     }
                 }
-                close(temp);
+
+
+                try {
+                    close(temp);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Toast.makeText(context, "Hata, İşlem gerçekleşmedi", Toast.LENGTH_SHORT).show();
+                }
+
 
                 isCorrect.dismiss();
             }
